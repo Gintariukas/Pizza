@@ -1,0 +1,88 @@
+/* Section One */
+$primary-color1: black;
+$primary-color2: white;
+$primary-color3: silver;
+
+.section-one {
+  height: inherit;
+  position: relative;
+  background-color: $primary-color1;
+  .picture-one {
+    background-image: url("https://www.w3schools.com/w3images/pizza.jpg");
+    background-size: cover;
+    min-height: 90%;
+    filter: grayscale(50%);
+  }
+  .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -50px;
+    h1 {
+      font-size: 100px;
+      font-weight: lighter;
+      color: $primary-color2;
+      padding: 15px;
+    }
+    button {
+      background-color: $primary-color1;
+      overflow: hidden;
+      border: none;
+      font-size: 36px;
+      padding: 8px 16px;
+      cursor: pointer;
+      a {
+        text-decoration: none;
+        color: $primary-color2;
+      }
+    }
+    button:hover {
+      background-color: $primary-color3;
+      color: $primary-color1;
+    }
+  }
+  p {
+    color: $primary-color2;
+    background-color: $primary-color1;
+    padding: 0 8px 0 8px;
+    position: absolute;
+    bottom: 11%;
+    left: 1%;
+    font-size: 30px;
+    overflow: hidden;
+  }
+  .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    font-size: 24px;
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
+    li {
+      float: left;
+    }
+    li a {
+      text-decoration: none;
+      color: $primary-color2;
+      text-align: center;
+      padding: 10px 15px;
+      display: block;
+    }
+    li a:hover {
+      background-color: $primary-color3;
+      color: $primary-color1;
+    }
+  }
+  .navbar:hover {
+    background-color: $primary-color1;
+  }
+}

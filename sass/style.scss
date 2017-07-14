@@ -1,0 +1,85 @@
+$font-stack: "Amatic SC", sans-serif;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: $font-stack;
+}
+html, body {
+  height: 100%;
+  width: 100%;
+
+}
+@import "sectionOne";
+@import "sectionTwo";
+@import "sectionThree";
+@import "sectionFour";
+
+footer {
+  color: white;
+  text-align: center;
+  font-family: $font-stack;
+  padding: 48px 0 48px 0;
+  font-size: 36px;
+  background-color: $primary-color1;
+  a {
+    color: green;
+  }
+}
+
+@media screen and (max-width: 852px) {
+  #menu {
+    .menu {
+      width: 95%;
+    }
+  }
+  #about {
+    .about {
+      width: 95%;
+    }
+  }
+  #contact {
+    .contact {
+      width: 95%;
+    }
+  }
+}
+
+@media screen and (max-width: 321px) {
+  #home {
+    .navbar {
+      display: none;
+    }
+    .header {
+      h1 {
+        font-size: 60px;
+        font-weight: bold;
+        width: 300px;
+      }
+    }
+  }
+  #menu {
+    #soup {
+      margin-right: 0;
+      margin-top: 40px;
+    }
+  }
+  #about {
+    #smaller {
+      max-width: 150px;
+      float: left;
+    }
+    .picture-two {
+      margin-top: 5px;
+    }
+    .time {
+      width: 85%;
+      .time-one {
+        width: 50%;
+      }
+      .time-two {
+        width: 50%;
+      }
+    }
+  }
+}

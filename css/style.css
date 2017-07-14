@@ -1,0 +1,310 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  font-family: "Amatic SC", sans-serif; }
+
+html, body {
+  height: 100%;
+  width: 100%; }
+
+/* Section One */
+.section-one {
+  height: inherit;
+  position: relative;
+  background-color: black; }
+  .section-one .picture-one {
+    background-image: url("https://www.w3schools.com/w3images/pizza.jpg");
+    background-size: cover;
+    min-height: 90%;
+    filter: grayscale(50%); }
+  .section-one .header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    margin-top: -50px; }
+    .section-one .header h1 {
+      font-size: 100px;
+      font-weight: lighter;
+      color: white;
+      padding: 15px; }
+    .section-one .header button {
+      background-color: black;
+      overflow: hidden;
+      border: none;
+      font-size: 36px;
+      padding: 8px 16px;
+      cursor: pointer; }
+      .section-one .header button a {
+        text-decoration: none;
+        color: white; }
+    .section-one .header button:hover {
+      background-color: silver;
+      color: black; }
+  .section-one p {
+    color: white;
+    background-color: black;
+    padding: 0 8px 0 8px;
+    position: absolute;
+    bottom: 11%;
+    left: 1%;
+    font-size: 30px;
+    overflow: hidden; }
+  .section-one .navbar {
+    background-color: rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+    top: 0;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    font-size: 24px; }
+    .section-one .navbar ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+      overflow: hidden; }
+    .section-one .navbar li {
+      float: left; }
+    .section-one .navbar li a {
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      padding: 10px 15px;
+      display: block; }
+    .section-one .navbar li a:hover {
+      background-color: silver;
+      color: black; }
+  .section-one .navbar:hover {
+    background-color: black; }
+
+/* Section Two */
+.col-1 {
+  width: 8.33%; }
+
+.col-2 {
+  width: 16.66%; }
+
+.col-3 {
+  width: 25%; }
+
+.col-4 {
+  width: 33.33%; }
+
+.col-5 {
+  width: 41.66%; }
+
+.col-6 {
+  width: 50%; }
+
+.col-7 {
+  width: 58.33%; }
+
+.col-8 {
+  width: 66.66%; }
+
+.col-9 {
+  width: 75%; }
+
+.col-10 {
+  width: 83.33%; }
+
+.col-11 {
+  width: 91.66%; }
+
+.col-12 {
+  width: 100%; }
+
+.section-two {
+  background-color: black;
+  color: white;
+  padding-bottom: 64px; }
+  .section-two .row::after {
+    content: "";
+    clear: both;
+    display: table; }
+  .section-two [class*="col-"] {
+    float: left;
+    padding: 0;
+    overflow: hidden; }
+  .section-two h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 64px;
+    padding: 64px 0; }
+  .section-two .menu {
+    margin: auto;
+    border: 1px solid white;
+    width: 75%; }
+  .section-two .tab {
+    overflow: hidden;
+    background-color: black; }
+  .section-two .tab-links {
+    height: 90px;
+    font-size: 36px;
+    overflow: hidden; }
+  .section-two button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: inherit;
+    width: 100%; }
+  .section-two button:hover {
+    background-color: #f44336;
+    color: white; }
+  .section-two .tab-content {
+    background-color: white;
+    color: grey;
+    font-size: 36px;
+    padding: 32px 16px;
+    overflow: hidden; }
+    .section-two .tab-content p {
+      padding-bottom: 32px; }
+    .section-two .tab-content .content h2 {
+      float: left;
+      padding: 0;
+      font-size: 36px;
+      color: black; }
+    .section-two .tab-content .content p {
+      float: right;
+      margin-top: 5px;
+      background-color: grey;
+      color: white;
+      border-radius: 3px;
+      padding: 2px 3px; }
+    .section-two .tab-content .content mark {
+      background-color: #f44336;
+      border-radius: 3px;
+      padding: 5px;
+      font-weight: lighter;
+      color: white; }
+    .section-two .tab-content .next-mark mark {
+      background-color: silver;
+      color: black; }
+
+/* Section Three */
+.section-three {
+  background-color: #f44336;
+  filter: grayscale(75%);
+  overflow: hidden;
+  padding-top: 64px;
+  color: white; }
+  .section-three .about {
+    width: 75%;
+    margin: auto; }
+    .section-three .about h1 {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 64px;
+      padding-bottom: 64px; }
+    .section-three .about p {
+      font-size: 24px;
+      margin: auto;
+      line-height: 1.5; }
+    .section-three .about .picture-three {
+      padding-top: 10px;
+      width: 100%; }
+    .section-three .about .picture-two {
+      border-radius: 50%;
+      width: 150px;
+      float: right;
+      margin-top: -100px; }
+    .section-three .about .time {
+      width: 60%;
+      font-size: 24px;
+      padding: 30px 0 30px 0; }
+      .section-three .about .time h2 {
+        padding-bottom: 30px; }
+      .section-three .about .time .time-one {
+        float: left; }
+        .section-three .about .time .time-one p {
+          padding-bottom: 30px; }
+      .section-three .about .time .time-two {
+        float: right; }
+        .section-three .about .time .time-two p {
+          padding-bottom: 30px; }
+  .section-three #map {
+    height: 400px;
+    background-color: white;
+    width: 100%;
+    clear: both;
+    filter: grayscale(100%); }
+
+/* Section Four */
+.section-four {
+  background-color: #607d8b;
+  filter: grayscale(50%);
+  padding: 64px 0 64px 0;
+  overflow: hidden; }
+  .section-four .contact {
+    margin: auto;
+    width: 75%; }
+    .section-four .contact h1 {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 64px;
+      padding-bottom: 64px;
+      color: white; }
+    .section-four .contact p {
+      font-size: 24px;
+      color: white; }
+    .section-four .contact input {
+      width: 100%;
+      display: block;
+      font-family: "Amatic SC", sans-serif;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      font-size: 24px;
+      height: 60px;
+      padding: 5px; }
+    .section-four .contact mark {
+      background-color: black;
+      color: white;
+      border-radius: 3px;
+      padding: 5px; }
+    .section-four .contact h3 {
+      color: white;
+      font-size: 36px;
+      font-weight: lighter; }
+
+footer {
+  color: white;
+  text-align: center;
+  font-family: "Amatic SC", sans-serif;
+  padding: 48px 0 48px 0;
+  font-size: 36px;
+  background-color: black; }
+  footer a {
+    color: green; }
+
+@media screen and (max-width: 852px) {
+  #menu .menu {
+    width: 95%; }
+  #about .about {
+    width: 95%; }
+  #contact .contact {
+    width: 95%; } }
+
+@media screen and (max-width: 321px) {
+  #home .navbar {
+    display: none; }
+  #home .header h1 {
+    font-size: 60px;
+    font-weight: bold;
+    width: 300px; }
+  #menu #soup {
+    margin-right: 0;
+    margin-top: 40px; }
+  #about #smaller {
+    max-width: 150px;
+    float: left; }
+  #about .picture-two {
+    margin-top: 5px; }
+  #about .time {
+    width: 85%; }
+    #about .time .time-one {
+      width: 50%; }
+    #about .time .time-two {
+      width: 50%; } }

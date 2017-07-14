@@ -1,0 +1,48 @@
+/* Section Four */
+$primary-color1: black;
+$primary-color2: white;
+$primary-color3: silver;
+$font-stack: "Amatic SC", sans-serif;
+
+.section-four {
+  background-color: #607d8b;
+  filter: grayscale(50%);
+  padding: 64px 0 64px 0;
+  overflow: hidden;
+  .contact {
+    margin: auto;
+    width: 75%;
+    h1 {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 64px;
+      padding-bottom: 64px;
+      color: $primary-color2;
+    }
+    p {
+      font-size: 24px;
+      color: $primary-color2;
+    }
+    input {
+      width: 100%;
+      display: block;
+      font-family: $font-stack;
+      margin: 20px auto;
+      border: 1px solid #ccc;
+      font-size: 24px;
+      height: 60px;
+      padding: 5px;
+    }
+    mark {
+      background-color: $primary-color1;
+      color: $primary-color2;
+      border-radius: 3px;
+      padding: 5px;
+    }
+    h3 {
+      color: $primary-color2;
+      font-size: 36px;
+      font-weight: lighter;
+    }
+  }
+}

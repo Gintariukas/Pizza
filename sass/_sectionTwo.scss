@@ -1,0 +1,107 @@
+/* Section Two */
+$primary-color1: black;
+$primary-color2: white;
+$primary-color3: silver;
+$primary-color4: #f44336;
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.section-two {
+  background-color: $primary-color1;
+  color: $primary-color2;
+  padding-bottom: 64px;
+  .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  [class*="col-"] {
+    float: left;
+    padding: 0;
+    overflow: hidden;
+  }
+  h1 {
+    font-weight: lighter;
+    text-align: center;
+    font-size: 64px;
+    padding: 64px 0;
+  }
+  .menu {
+    margin: auto;
+    border: 1px solid white;
+    width: 75%;
+  }
+  .tab {
+    overflow: hidden;
+    background-color: $primary-color1;
+  }
+  .tab-links {
+    height: 90px;
+    font-size: 36px;
+    overflow: hidden;
+  }
+  button {
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: white;
+    background-color: inherit;
+    width: 100%;
+  }
+  button:hover {
+    background-color: $primary-color4;
+    color: $primary-color2;
+  }
+  .tab-content {
+    background-color: $primary-color2;
+    color: grey;
+    font-size: 36px;
+    padding: 32px 16px;
+    overflow: hidden;
+
+    p {
+      padding-bottom: 32px;
+    }
+    .content {
+      h2 {
+        float: left;
+        padding: 0;
+        font-size: 36px;
+        color: $primary-color1;
+      }
+      p {
+        float: right;
+        margin-top: 5px;
+        background-color: grey;
+        color: $primary-color2;
+        border-radius: 3px;
+        padding: 2px 3px;
+      }
+      mark {
+        background-color: $primary-color4;
+        border-radius: 3px;
+        padding: 5px;
+        font-weight: lighter;
+        color: $primary-color2;
+      }
+    }
+    .next-mark {
+      mark {
+        background-color: silver;
+        color: $primary-color1;
+      }
+    }
+  }
+}

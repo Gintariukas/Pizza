@@ -1,0 +1,65 @@
+/* Section Three */
+$primary-color1: black;
+$primary-color2: white;
+$primary-color3: silver;
+$primary-color4: #f44336;
+
+.section-three {
+  background-color: $primary-color4;
+  filter: grayscale(75%);
+  overflow: hidden;
+  padding-top: 64px;
+  color: $primary-color2;
+  .about {
+    width: 75%;
+    margin: auto;
+    h1 {
+      font-weight: lighter;
+      text-align: center;
+      font-size: 64px;
+      padding-bottom: 64px;
+    }
+    p {
+      font-size: 24px;
+      margin: auto;
+      line-height: 1.5;
+    }
+    .picture-three {
+      padding-top: 10px;
+      width: 100%;
+    }
+    .picture-two {
+      border-radius: 50%;
+      width: 150px;
+      float: right;
+      margin-top: -100px;
+    }
+    .time {
+      width: 60%;
+      font-size: 24px;
+      padding: 30px 0 30px 0;
+      h2 {
+        padding-bottom: 30px;
+      }
+      .time-one {
+        float: left;
+        p {
+          padding-bottom: 30px;
+        }
+      }
+      .time-two {
+        float: right;
+        p {
+          padding-bottom: 30px;
+        }
+      }
+    }
+  }
+  #map {
+    height: 400px;
+    background-color: $primary-color2;
+    width: 100%;
+    clear: both;
+    filter: grayscale(100%);
+  }
+}

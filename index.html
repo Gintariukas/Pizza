@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Amatic+SC">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>W3.CSS Template</title>
+</head>
+<body>
+
+<!-- Section One -->
+<div class="section-one" id="home">
+    <div class="navbar">
+        <ul>
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#menu">MENU</a></li>
+            <li><a href="#about">ABOUT</a></li>
+            <li><a href="#map">CONTACT</a></li>
+        </ul>
+    </div>
+    <div class="picture-one">
+        <div class="header">
+            <h1>thin</h1>
+            <h1>CRUST PIZZA</h1>
+            <button><a href="#menu">Let me see the menu</a></button>
+        </div>
+        <p>Open from 10am to 12pm</p>
+    </div>
+</div>
+<!-- Section Two -->
+<div class="section-two" id="menu">
+    <h1>THE MENU</h1>
+    <div class="row menu">
+        <div class="col-4 tab">
+            <button class="tab-links" onclick="openMenu(event, 'Pizza')">Pizza</button>
+        </div>
+        <div class="col-4 tab">
+            <button class="tab-links" onclick="openMenu(event, 'Salads')">Salads</button>
+        </div>
+        <div class="col-4 tab">
+            <button class="tab-links" onclick="openMenu(event, 'Starter')">Starter</button>
+        </div>
+        <div class="col-12 col-m-12">
+            <div class="tab-content"  id="Pizza">
+                <div class="content">
+                    <h2><b>Margherita</b></h2>
+                    <p>$12.50</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, fresh mozzarella, fresh basil</p>
+                <div class="content">
+                    <h2><b>Formaggio</b></h2>
+                    <p>$15.50</p>
+                </div>
+                <br><br>
+                <p>Four cheeses (mozzarella, parmesan, pecorino, jarlsberg)</p>
+                <div class="content">
+                    <h2><b>Chicken</b></h2>
+                    <p>$17.00</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, mozzarella, chicken, onions</p>
+                <div class="content">
+                    <h2><b>Pineapple'o'clock</b></h2>
+                    <p>$16.50</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, mozzarella, fresh pineapple, bacon, fresh basil</p>
+                <div class="content">
+                    <h2><b>Meat Town </b><mark>Hot!</mark></h2>
+                    <p>$20.00</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, mozzarella, hot pepporoni, hot sausage, beef, chicken</p>
+                <div class="content next-mark">
+                    <h2><b>Parma </b><mark>New</mark></h2>
+                    <p>$21.50</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, mozzarella, parma, bacon, fresh arugula</p>
+            </div>
+            <div class="tab-content"  id="Salads">
+                <div class="content next-mark">
+                    <h2><b>Lasagna </b><mark>Popular</mark></h2>
+                    <p>$13.50</p>
+                </div>
+                <br><br>
+                <p>FSpecial sauce, mozzarella, parmesan, ground beef</p>
+                <div class="content">
+                    <h2><b>Ravioli</b></h2>
+                    <p>$14.50</p>
+                </div>
+                <br><br>
+                <p>Ravioli filled with cheese</p>
+                <div class="content">
+                    <h2><b>Spaghetti Classica</b></h2>
+                    <p>$11.00</p>
+                </div>
+                <br><br>
+                <p>Fresh tomatoes, onions, ground beef</p>
+                <div class="content">
+                    <h2><b>Seafood pasta</b></h2>
+                    <p>$25.50</p>
+                </div>
+                <br><br>
+                <p>Salmon, shrimp, lobster, garlic</p>
+            </div>
+            <div class="tab-content" id="Starter">
+                <div class="content next-mark">
+                    <h2><b>Today's Soup </b><mark>Seasonal</mark></h2>
+                    <p id="soup">$5.50</p>
+                </div>
+                <br><br>
+                <p>Ask the waiter</p>
+                <div class="content">
+                    <h2><b>Bruschetta</b></h2>
+                    <p>$8.50</p>
+                </div>
+                <br><br>
+                <p>Bread with pesto, tomatoes, onion, garlic</p>
+                <div class="content">
+                    <h2><b>Garlic bread</b></h2>
+                    <p>$9.50</p>
+                </div>
+                <br><br>
+                <p>Grilled ciabatta, garlic butter, onions</p>
+                <div class="content">
+                    <h2><b>Tomozzarella</b></h2>
+                    <p>$10.50</p>
+                </div>
+                <br><br>
+                <p>Tomatoes and mozzarella</p>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- Section Three -->
+<div class="section-three" id="about">
+    <div class="about">
+        <h1>ABOUT</h1>
+        <p>The Pizza Restaurant was founded in blabla by Mr. Italiano in lorem ipsum dolor sit amet, consectetur
+            adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        </p><br>
+        <p><b>The Chef?</b> Mr. Italiano himself</p><br>
+        <p id="smaller">We are proud of our interiors.</p>
+        <img src="images/chef.jpg" class="picture-two">
+        <img src="images/onepage_restaurant.jpg" alt="Store" class="picture-three">
+        <div class="time" id="time">
+            <h2><b>Opening Hours</b></h2>
+            <div class="time-one">
+                <p>Mon & Tue CLOSED</p>
+                <p>Wednesday 10.00 - 24.00</p>
+                <p>Thursday 10:00 - 24:00</p>
+            </div>
+            <div class="time-two">
+                <p>Friday 10:00 - 12:00</p>
+                <p>Saturday 10:00 - 23:00</p>
+                <p>Sunday Closed</p>
+            </div>
+        </div>
+    </div>
+    <div id="map"></div>
+</div>
+<!-- Section Four -->
+<div class="section-four" id="contact">
+    <div class="contact">
+        <h1>Contact</h1>
+        <p>Find us at some address at some place or call us at 05050515-122330</p><br>
+        <p><mark>FYI!</mark> We offer full-service catering for any event, large or small. We understand your needs and we will cater
+            the food to satisfy the biggest criteria of them all, both look and taste.
+        </p><br>
+        <h3><b>Reserve</b> a table, ask for today's special or just send us a message:</h3>
+        <form action="">
+            <input type="text" placeholder="Name" name="name" required>
+            <input type="number" placeholder="How many people" name="name" required>
+            <label>
+            <input type="datetime-local" name="time" required>
+            </label>
+            <input type="text" placeholder="Message/Special Requirements" name="message">
+            <input type="submit" value="Send message" required>
+        </form>
+    </div>
+</div>
+
+<footer>
+    <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" title="W3.CSS">w3.css</a></p>
+</footer>
+
+<script src="java.js"></script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAVrK2xATekyBpZDtogjNchk-QGLThvq78&callback=myMap"></script>
+
+</body>
+</html>
