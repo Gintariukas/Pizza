@@ -12,12 +12,14 @@ function openMenu(evt, menuName) {
 
     tablinks = document.getElementsByClassName("tab-links");
     for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
+        tablinks[i].className = tablinks[i].className.replace(" none", "");
     }
 
     document.getElementById(menuName).style.display = "block";
     evt.currentTarget.className += " active";
 }
+document.getElementById("current").click();
+
 // Map
 function myMap() {
     var mapProp = {
